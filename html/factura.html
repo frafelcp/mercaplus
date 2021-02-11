@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/factura_style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+    <link rel="icon" type="image/PNG" href="../img/ico.PNG">
+</head>
+<body>
+    <div class="encabezado"><img src="../img/enc.jpg" alt="MercaPlus"></div>
+    <nav>
+        <ul class="menu">
+            <li class="item"><a href="../index.html">Inicio</a></li>
+            <li class="item"><a href="servicios.html">Servicios</a></li>
+            <li class="item"><a href="premios.html">Premios</a></li>
+            <li class="item"><a href="sucursales.html">Sucursales</a></li>
+            <li class="item"><a href="catalogo.html">Catalogo</a></li>
+            <li class="item"><a href="factura.html">Factura</a></li>
+            <li class="item"><a href="chat.html">Chat</a></li>
+            <li class="item"><a href="contactenos.html">Contactenos</a></li>
+        </ul>
+    </nav>
+    <h1>Factura</h1>
+    <div class="formulario">
+
+        <p>Se requiere que ingrese sus datos personales para efectuar la compra</p>
+        <form id="form">
+            <label>Producto</label><br><br>
+            <select id="producto">
+                <option value="">Productos</option>
+                <option value="Harina PAN">Harina PAN</option>
+                <option value="Chorizo Antioqueño">Chorizo Antioqueño</option>
+                <option value="Tablet Lenovo">Tablet Lenovo</option>
+                <option value="Cámara Canon">Cámara Canon</option>
+            </select>
+            <br><br>
+            <label>Precio unitario</label>
+            <p id="costo"></p>
+            <br><br>
+            <input id="unidades" type="number" placeholder="Cantidad"><br><br>
+            <input id="nombre" type="text" placeholder="Nombre">&emsp;&emsp;<input id="apellido" type="text"
+                placeholder="Apellido"><br><br>
+           
+            <label>Identificacion</label><br><br>
+            <select id="id">
+                <option value="Cedula de ciudadania">CC</option>
+                <option value="Cedula extranjera">CE</option>
+            </select>
+            <input id="documento" type="number" placeholder="Numero de documento"><br><br>
+            <label>Metodo de pago</label><br>
+            <select id="modo">
+                <option value="Tarjeta credito">Tarjeta credito</option>
+                <option value="Tarjeta debito">Tarjeta debito</option>
+            </select><br><br>
+            <label for="">Numero de cuenta</label><br>
+            <input id="num" type="text" placeholder="XXXX XXXX XXXX"><br><br>
+            <input type="submit"><input type="reset">
+            <div id="show">
+                <table id="mostrar">
+                    <thead>
+                        <th>Nombre</th>
+                        <th>Identificacion</th>
+                        <th>Producto</th>
+                        <th>Pago</th>
+                        <th>Precio total</th>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                   </table>
+            </div>    
+           
+            <br><br>
+            <label for="contacto">Numero de atencion al cliente:(031) 3489888
+                <br>Correo:sac@tiendasMercPlus.co</label>
+        </form>
+
+    </div>
+            
+
+    <footer>© MercaPlus 2020 <br>
+        Todos los derechos reservados</footer>
+
+        <script src="../js/factura.js"></script>
+</body>
+</html>
